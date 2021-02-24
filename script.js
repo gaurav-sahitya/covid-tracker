@@ -30,7 +30,7 @@ fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api_india", {
     console.log(states);
 
     ind.innerHTML = `
-                      <div class="row">
+                      <div class="row w-100">
                         <div class="p-3 text-center text-primary col-6 col-sm-3">
                             <p class="fs-3 fw-bold">Active</p>
                             <h5>${total.active} <span class="fs-6"> ( <i class="fas fa-plus"></i> ${total.deltaconfirmed})</span></h5>
