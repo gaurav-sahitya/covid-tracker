@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.Inactive {
+  display: none;
+}
+
+.center{
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.text-orange{
+  color: rgb(255, 123, 0)
+}
