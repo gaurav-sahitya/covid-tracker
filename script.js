@@ -17,7 +17,6 @@ fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api_india", {
                                       <th class="col-2" scope="col"><p class="fs-5 text-end">Deaths</p></th>
                                     </tr>`;
     total = data.total_values;
-    console.log(data.state_wise);
 
     states = [];
 
@@ -26,8 +25,6 @@ fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api_india", {
     }
 
     states.sort((a, b) => b[1] - a[1]);
-
-    console.log(states);
 
     ind.innerHTML = `
                       <div class="row w-100">
@@ -90,7 +87,6 @@ input = document.getElementById("input");
 input.addEventListener("input", (e) => {
   const val = e.target.value.toLowerCase();
   st_elements = document.querySelectorAll(".state");
-  console.log(st_elements);
 
   if (val == "") {
     st_elements.forEach((element) => {
